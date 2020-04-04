@@ -1,0 +1,7 @@
+﻿  RPQ.cpp
+C:\Users\Bialy\source\repos\RPQ\RPQ\RPQ.cpp(102,27): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Bialy\source\repos\RPQ\RPQ\RPQ.cpp(115,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Bialy\source\repos\RPQ\RPQ\RPQ.cpp(129,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Bialy\source\repos\RPQ\RPQ\RPQ.cpp(138,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Bialy\source\repos\RPQ\RPQ\RPQ.cpp(151,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  RPQ.vcxproj -> C:\Users\Bialy\source\repos\RPQ\Debug\RPQ.exe

@@ -1,0 +1,5 @@
+﻿  Schrange.cpp
+D:\Studia\Sterowanie procesami dyskretnymi\Schrange\Schrange\Schrange.cpp(30,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+D:\Studia\Sterowanie procesami dyskretnymi\Schrange\Schrange\Schrange.cpp(46,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+D:\Studia\Sterowanie procesami dyskretnymi\Schrange\Schrange\Schrange.cpp(164,35): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  Schrange.vcxproj -> D:\Studia\Sterowanie procesami dyskretnymi\Schrange\Debug\Schrange.exe
