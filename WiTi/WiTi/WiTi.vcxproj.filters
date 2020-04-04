@@ -24,4 +24,9 @@
       <Filter>Pliki źródłowe</Filter>
     </Text>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="combinations.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
