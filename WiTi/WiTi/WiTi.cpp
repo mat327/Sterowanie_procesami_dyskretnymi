@@ -90,7 +90,6 @@ int main() {
 
 			typedef std::vector<Task>::iterator Iter;
 			int lowestPenalty = calculate_Penalty(P, W, D);
-			int secondLowestPenalty = calculate_Penalty(tasks);
 			std::vector<Task> temp;
 
 			for_each_permutation
