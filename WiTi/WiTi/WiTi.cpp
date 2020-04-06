@@ -114,7 +114,7 @@ int main() {
 				}
 			);
 
-			cout << "\n\n LOWEST PENALTY = " << lowestPenalty << "\n\n";
+			cout << endl << "LOWEST PENALTY = " << lowestPenalty << endl << endl;
 
 			vector<int> newOrder = getNewOrderWithSortD(D);
 
@@ -127,7 +127,7 @@ int main() {
 
 
 			cout << "New order for " + dataName + " with SortD "; printVector(newOrder);
-			cout << "Calculated penalty for " + dataName + " = " << Penalty[i] << "\n\n";
+			cout << "Calculated penalty for " + dataName + " = " << Penalty[i] << endl << endl << endl << endl;
 
 			//clear vectors
 			P.clear(); W.clear(); D.clear(); tasks.clear();
