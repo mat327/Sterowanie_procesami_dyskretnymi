@@ -1,0 +1,8 @@
+﻿  WiTi.cpp
+C:\Users\Bialy\source\repos\WiTi\WiTi\WiTi.cpp(165,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Bialy\source\repos\WiTi\WiTi\WiTi.cpp(178,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Bialy\source\repos\WiTi\WiTi\WiTi.cpp(192,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Bialy\source\repos\WiTi\WiTi\WiTi.cpp(201,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Bialy\source\repos\WiTi\WiTi\WiTi.cpp(214,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Bialy\source\repos\WiTi\WiTi\WiTi.cpp(235,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  WiTi.vcxproj -> C:\Users\Bialy\source\repos\WiTi\Debug\WiTi.exe
