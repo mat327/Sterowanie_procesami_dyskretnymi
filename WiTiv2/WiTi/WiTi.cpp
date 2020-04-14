@@ -58,7 +58,7 @@ int main() {
 			cout << "Penalty for initialorder = " << calculate_Penalty(P, W, D) << endl;
 
 			auto start = std::chrono::steady_clock::now();
-			//Brute Force
+			//Brute Force (algorytm Dijkstry)
 			//numbers of combinations
 			long long silnia = 1;
 			for (int j = quantityOfDataLines; j > 1; j--)
