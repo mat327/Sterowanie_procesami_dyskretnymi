@@ -85,7 +85,7 @@ int main() {
 			cout <<  "LOWEST PENALTY = " << lowestPenalty << endl << endl;
 
 			//SortD
-
+			auto start2 = std::chrono::steady_clock::now();
 			vector<int> newOrder = getNewOrderWithSortD(D);
 
 			vector<int> newP = getReorganisedVector(P, newOrder);
@@ -95,7 +95,7 @@ int main() {
 			Penalty.push_back(calculate_Penalty(newP, newW, newD));
 
 			auto end2 = std::chrono::steady_clock::now();
-			chrono::duration<double> elapsed_seconds2 = end2 - start;
+			chrono::duration<double> elapsed_seconds2 = end2 - start2;
 			cout << "sortD time: " << elapsed_seconds.count() << " s" << endl;
 
 			cout << "New order for " + dataName + " with SortD "; printVector(newOrder);
