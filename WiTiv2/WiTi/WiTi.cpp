@@ -96,7 +96,7 @@ int main() {
 
 			auto end2 = std::chrono::steady_clock::now();
 			chrono::duration<double> elapsed_seconds2 = end2 - start2;
-			cout << "sortD time: " << elapsed_seconds.count() << " s" << endl;
+			cout << "sortD time: " << elapsed_seconds2.count() << " s" << endl;
 
 			cout << "New order for " + dataName + " with SortD "; printVector(newOrder);
 			cout << "Calculated penalty for " + dataName + " = " << Penalty[i] << endl << endl << endl << endl;
