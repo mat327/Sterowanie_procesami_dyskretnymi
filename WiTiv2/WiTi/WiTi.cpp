@@ -56,24 +56,26 @@ int main() {
 			}
 
 			cout << "Penalty for initialorder = " << calculate_Penalty(P, W, D) << endl;
-			
+
 			//numbers of combinations
 			long long silnia = 1;
 			for (int j = quantityOfDataLines; j > 1; j--)
-				 silnia *= j;
+				silnia *= j;
 
 			//for all combinations
 			int lowestPenalty = calculate_Penalty(P, W, D);
-			for (int j = 0; j < silnia-1 ; j++) {
+			for (int j = 0; j < silnia - 1; j++) {
 				newOrder = BruteForce(P, quantityOfDataLines);
-				 P = getReorganisedVector(P, newOrder);
-				 W = getReorganisedVector(W, newOrder);
-				 D = getReorganisedVector(D, newOrder);
+				P = getReorganisedVector(P, newOrder);
+				W = getReorganisedVector(W, newOrder);
+				D = getReorganisedVector(D, newOrder);
 				int newpenalty = calculate_Penalty(P, W, D);
 				if (newpenalty < lowestPenalty)
 				{
 					lowestPenalty = newpenalty;
 				}
+				//printVector(P);
+
 			}
 
 			cout << endl << "LOWEST PENALTY = " << lowestPenalty << endl << endl;
@@ -98,7 +100,7 @@ int main() {
 		}
 		myfile.close();
 
-		
+
 
 	}
 	else {
@@ -131,7 +133,7 @@ vector<int> getNewOrderWithSortD(vector<int> localD) {
 			}
 		}
 		newOrder.push_back(smallestNumberIndex);
-		localD[smallestNumberIndex] = BIG_NUMBER; 
+		localD[smallestNumberIndex] = BIG_NUMBER;
 	}
 	return newOrder;
 }
@@ -203,34 +205,35 @@ vector<int> BruteForce(vector<int> P, int size)
 	/* wyznaczanie pierwszego od prawej elementu
 	 * mniejszego niz jego sasiad z prawej strony
 	 */
-	int previ = size-1;
+	int previ = size - 1;
 	i = previ - 1;
-	while ((previ > 0) && (P[i] >= P[previ])) ///
+	while ((previ > 0) && (P[i] >= P[previ]))
 	{
 		i--;
 		previ--;
 	}
 
 	/* wyznaczanie elementu wiekszego od znalezionego */
-	if (i > 0) {
+	if (i > -1) {
 		j = size - 1;
 		while ((j > 0) && (P[j] <= P[i]))
 			j--;
+
+		/* zamiana miejscami dwoch znalezionych wyzej elementow */
+		if (j > 0) { //sprawdz warunek
+			k = newOrder[i];
+			newOrder[i] = newOrder[j];
+			newOrder[j] = k;
+		}
 	}
 
-	/* zamiana miejscami dwoch znalezionych wyzej elementow */
-	if (i > 0 && j > 0) { //sprawdz warunek
-		k = newOrder[i];
-		newOrder[i] = newOrder[j];
-		newOrder[j] = k;
-	}
+
 
 	/* odbicie lustrzane szeregu elementow od indeksu i+1 do konca tablicy */
-	for (i++, j = size-1; i < j; i++, j--) {
+	for (i++, j = size - 1; i < j; i++, j--) {
 		k = newOrder[i];
 		newOrder[i] = newOrder[j];
 		newOrder[j] = k;
 	}
-	printVector(newOrder);
 	return newOrder;
 }
