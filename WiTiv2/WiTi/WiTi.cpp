@@ -57,6 +57,8 @@ int main() {
 
 			cout << "Penalty for initialorder = " << calculate_Penalty(P, W, D) << endl;
 
+			auto start = std::chrono::steady_clock::now();
+			//Brute Force
 			//numbers of combinations
 			long long silnia = 1;
 			for (int j = quantityOfDataLines; j > 1; j--)
@@ -74,11 +76,15 @@ int main() {
 				{
 					lowestPenalty = newpenalty;
 				}
-				//printVector(P);
 
 			}
+			auto end = std::chrono::steady_clock::now();
+			chrono::duration<double> elapsed_seconds = end - start;
+			cout << "brute force time: " << elapsed_seconds.count() << " s"<< endl ;
 
 			cout << endl << "LOWEST PENALTY = " << lowestPenalty << endl << endl;
+
+			//SortD
 
 			vector<int> newOrder = getNewOrderWithSortD(D);
 
@@ -86,9 +92,11 @@ int main() {
 			vector<int> newW = getReorganisedVector(W, newOrder);
 			vector<int> newD = getReorganisedVector(D, newOrder);
 
-
 			Penalty.push_back(calculate_Penalty(newP, newW, newD));
 
+			auto end2 = std::chrono::steady_clock::now();
+			chrono::duration<double> elapsed_seconds2 = end2 - start;
+			cout << "sortD time: " << elapsed_seconds.count() << " s" << endl;
 
 			cout << "New order for " + dataName + " with SortD "; printVector(newOrder);
 			cout << "Calculated penalty for " + dataName + " = " << Penalty[i] << endl << endl << endl << endl;
