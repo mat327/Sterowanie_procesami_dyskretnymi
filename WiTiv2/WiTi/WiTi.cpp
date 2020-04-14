@@ -80,9 +80,9 @@ int main() {
 			}
 			auto end = std::chrono::steady_clock::now();
 			chrono::duration<double> elapsed_seconds = end - start;
-			cout << "brute force time: " << elapsed_seconds.count() << " s"<< endl ;
+			cout << endl << "brute force time: " << elapsed_seconds.count() << " s"<< endl ;
 
-			cout << endl << "LOWEST PENALTY = " << lowestPenalty << endl << endl;
+			cout <<  "LOWEST PENALTY = " << lowestPenalty << endl << endl;
 
 			//SortD
 
