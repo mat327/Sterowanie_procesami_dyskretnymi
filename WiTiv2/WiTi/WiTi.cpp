@@ -56,7 +56,7 @@ int main() {
 			}
 
 			cout << "Penalty for initialorder = " << calculate_Penalty(P, W, D) << endl;
-
+			
 			auto start = std::chrono::steady_clock::now();
 			//Brute Force (algorytm Dijkstry)
 			//numbers of combinations
@@ -83,7 +83,7 @@ int main() {
 			cout << endl << "brute force time: " << elapsed_seconds.count() << " s"<< endl ;
 
 			cout <<  "LOWEST PENALTY = " << lowestPenalty << endl << endl;
-
+			
 			//SortD
 			auto start2 = std::chrono::steady_clock::now();
 			vector<int> newOrder = getNewOrderWithSortD(D);
@@ -228,7 +228,7 @@ vector<int> BruteForce(vector<int> P, int size)
 			j--;
 
 		/* zamiana miejscami dwoch znalezionych wyzej elementow */
-		if (j > 0) { //sprawdz warunek
+		if (j > 0) { //warunek sprawdzajacy czy nie podmieniamy tej samej liczby
 			k = newOrder[i];
 			newOrder[i] = newOrder[j];
 			newOrder[j] = k;
