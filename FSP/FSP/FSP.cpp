@@ -89,7 +89,7 @@ int main() {
 			cout << endl << "brute force time: " << elapsed_seconds.count() << " s" << endl;
 
 			cout << "LOWEST Cmax = " << lowestCmax << endl << endl << endl;
-
+			
 			//clear vectors
 			MyVector.clear();
 			newOrder.clear();
@@ -156,7 +156,7 @@ int calculate_Cmax(vector<vector<int>> Myvector, int quantityofMachines, int qua
 				}
 			}
 			else { //dla nast maszyn po zakonczeniu na poprzedniej
-				if (j == 0) {//dla pierwszego zad napewno
+				if (j == 0) {//dla pierwszego zad napewno maszyna jest gotowa
 					Vec[i].push_back(MyVector[i][j] + Vec[i - 1][j]);
 				}
 				else//dla nastepnych jesli maszyna skonczyla poprzednie

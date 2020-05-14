@@ -117,7 +117,7 @@ int calculate_Cmax(vector<vector<int>> Myvector, int quantityofMachines, int qua
 	{
 		Vec.push_back(vector < int >());
 	}
-	//wektor czasu zak zad dla maszyn
+	//wektor czasu zakończenia zad dla maszyn
 	for (int i = 0; i < quantityofMachines; i++)
 	{
 		for (int j = 0; j < quantityofDataLines; j++)
@@ -166,7 +166,7 @@ vector<int> JhonsonsAlgorithm(vector<vector<int>> Myvector, int quantityofDataLi
 	for (int j = 0; j < quantityofDataLines; j++) {
 		min1 = BIGNUMBER;
 		min2 = BIGNUMBER;
-		for (int i = 0; i < quantityofDataLines; i++) //szukanie najmniejszego czasu
+		for (int i = 0; i < quantityofDataLines; i++) //szukanie najmniejszego czasu na pierwszej i drugiej maszynie
 		{
 			if (min1 > Myvector[0][i])
 			{
@@ -179,7 +179,7 @@ vector<int> JhonsonsAlgorithm(vector<vector<int>> Myvector, int quantityofDataLi
 				smallestindex2 = i;
 			}
 		}
-		if (min1 < min2) {
+		if (min1 < min2) { //sprawdzenie min czasów na maszynach
 			newOrder[left] = smallestindex1;
 			Myvector[0][smallestindex1]=BIGNUMBER;
 			Myvector[1][smallestindex1] = BIGNUMBER;
