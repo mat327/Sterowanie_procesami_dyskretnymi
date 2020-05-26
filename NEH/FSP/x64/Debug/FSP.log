@@ -1,7 +1,2 @@
 ﻿  FSP.cpp
-D:\Studia\Sterowanie procesami dyskretnymi\Sterowanie_procesami_dyskretnymi\NEH\FSP\FSP.cpp(211,4): error C2065: "myfile": niezadeklarowany identyfikator
-D:\Studia\Sterowanie procesami dyskretnymi\Sterowanie_procesami_dyskretnymi\NEH\FSP\FSP.cpp(211,14): error C2065: "MachineIndex": niezadeklarowany identyfikator
-D:\Studia\Sterowanie procesami dyskretnymi\Sterowanie_procesami_dyskretnymi\NEH\FSP\FSP.cpp(212,4): error C2065: "myfile": niezadeklarowany identyfikator
-D:\Studia\Sterowanie procesami dyskretnymi\Sterowanie_procesami_dyskretnymi\NEH\FSP\FSP.cpp(212,14): error C2065: "temp": niezadeklarowany identyfikator
-D:\Studia\Sterowanie procesami dyskretnymi\Sterowanie_procesami_dyskretnymi\NEH\FSP\FSP.cpp(213,26): error C2065: "temp": niezadeklarowany identyfikator
-D:\Studia\Sterowanie procesami dyskretnymi\Sterowanie_procesami_dyskretnymi\NEH\FSP\FSP.cpp(217,9): error C2065: "newOrder": niezadeklarowany identyfikator
+  FSP.vcxproj -> D:\Programy\Sterowanie_procesami_dyskretnymi\NEH\x64\Debug\FSP.exe
