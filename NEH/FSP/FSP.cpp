@@ -191,7 +191,7 @@ vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, 
 	//Wj vector
 	vector<int> Wj;
 	vector<int> OrderWj;
-	vector < vector < int > > VEC;
+	vector < vector < int > > VEC, VECCopy;
 	vector<int> newOrder, newOrderCopy, bestnewOrder;
 	
 	for (int l = 0; l < quantityofDataLines; l++) //calculate W for tasks
@@ -207,6 +207,7 @@ vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, 
 	for (int j = 0; j < quantityofMachines; j++)
 	{
 		VEC.push_back(vector < int >());
+		VECCopy.push_back(vector < int >());
 	} 
 
 	for (int i = 0; i < quantityofDataLines; i++)
@@ -214,8 +215,9 @@ vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, 
 		for (int j = 0; j < quantityofMachines; j++)
 		{
 			VEC[j].push_back(MyVector[j][OrderWj[i]]);
+			VECCopy[j].push_back(MyVector[j][OrderWj[i]]);
 		}
-		newOrder.push_back(OrderWj[i]);
+		newOrder.push_back(i);
 		bestnewOrder = newOrder;
 		int Cmax = calculate_Cmax(VEC, quantityofMachines, i+1);//initial order
 
@@ -224,14 +226,16 @@ vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, 
 		for (int k = 0; k < i; k++)
 		{
 			newOrderCopy = newOrder;
-			int zmienna = newOrderCopy[k];
-			newOrderCopy[k] = OrderWj[i];
-			newOrderCopy[i] = zmienna;
-			for (int j = 0; j < quantityofMachines; j++) {
-				getReorganisedVector(VEC[j], newOrderCopy);
+			for (int l = i-k; l > 0; l--) {
+				int zmienna = newOrderCopy[k+l-1];
+				newOrderCopy[k+l-1] = newOrderCopy[k+l];
+				newOrderCopy[k+l] = zmienna;
 			}
-			Cmax2 = calculate_Cmax(VEC, quantityofMachines, i);
-			for (int x = 0; x <= k; x++) cout << newOrderCopy[x] << " ";
+			for (int j = 0; j < quantityofMachines; j++) {
+				VECCopy[j]=getReorganisedVector(VEC[j], newOrderCopy);
+			}
+			Cmax2 = calculate_Cmax(VECCopy, quantityofMachines, i);
+			for (int x = 0; x <= i; x++) cout << newOrderCopy[x] << " ";
 			cout << Cmax2 << endl; 
 			if (Cmax2 < Cmax)
 			{
@@ -240,13 +244,23 @@ vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, 
 			}
 		}
 
-		if(i=!0)newOrder = bestnewOrder;
-		for (int x = 0; x < i; x++) cout << newOrder[x] << " ";
-		cout << endl << endl;
-		for (int j = 0; j < quantityofMachines; j++) {
-			getReorganisedVector(VEC[j], newOrder);
+		if (i != 0) {
+			newOrder = bestnewOrder;
+			for (int x = 0; x <= i; x++) cout << newOrder[x] << " ";
+			cout << endl << endl;
+			for (int j = 0; j < quantityofMachines; j++) {
+				VEC[j]=getReorganisedVector(VEC[j], newOrder);
+			}
 		}
 	}
+	//clear vectors
+	Wj.clear();
+	VEC.clear();
+	VECCopy.clear();
+	bestnewOrder.clear();
+	newOrderCopy.clear();
 
-	return newOrder;
+	OrderWj = getReorganisedVector(OrderWj, newOrder);
+	for (int x = 0; x < quantityofDataLines; x++)cout << OrderWj[x] << endl;
+	return OrderWj;
 }
