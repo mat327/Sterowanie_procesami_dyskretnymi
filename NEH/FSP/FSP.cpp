@@ -15,11 +15,10 @@ int quantityofDataLines = 0;
 int quantityofMachines = 0;
 
 vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, int quantityofMachines);
-void printVector(const vector<int> VEC);
 vector<int> getReorganisedVector(const vector<int> VEC, const vector<int> NEW_ORDER);
 bool isVectorContainingOnlySmallNumbers(const vector<int> VEC, const int SMALL_NUMBER);
 vector<int> getNewOrderWithSortWj(vector<int> localWj);
-int calculate_Cmax(vector<vector<int>> Myvector, int quantityofMachines, int quantityofDataLines);
+int calculate_Cmax(vector<vector<int>> VEC, int quantityofMachines, int quantityofDataLines);
 
 int main() {
 	string line;
@@ -36,7 +35,7 @@ int main() {
 		{
 			filename = "ta0" + to_string(i) + ".txt";
 		}
-		if (i>100)
+		if (i>=100)
 		{
 			filename = "ta" + to_string(i) + ".txt";
 		}
@@ -104,14 +103,6 @@ vector<int> getReorganisedVector(const vector<int> VEC, const vector<int> NEW_OR
 	return reOrderedVector;
 }
 
-void printVector(const vector<int> VEC) {
-	cout << " [";
-	for (int i = 0; i < VEC.size(); i++) {
-		cout << " " << VEC[i];
-	}
-	cout << " ]\n";
-}
-
 vector<int> getNewOrderWithSortWj(vector<int> localWj) {
 	const int SMALL_NUMBER = -1;
 
@@ -144,7 +135,7 @@ bool isVectorContainingOnlySmallNumbers(const vector<int> VEC, const int SMALL_N
 	return true;
 }
 
-int calculate_Cmax(vector<vector<int>> Myvector, int quantityofMachines, int quantityofDataLines) {
+int calculate_Cmax(vector<vector<int>> VEC, int quantityofMachines, int quantityofDataLines) {
 	//wektor pomocniczy
 	vector < vector < int > > Vec;
 
@@ -159,25 +150,25 @@ int calculate_Cmax(vector<vector<int>> Myvector, int quantityofMachines, int qua
 		{
 			if (i == 0) { // dla pierwszej maszyny zadania jedno po drugim
 				if (j == 0) {
-					Vec[i].push_back(MyVector[i][j]);
+					Vec[i].push_back(VEC[i][j]);
 				}
 				else
 				{
-					Vec[i].push_back(MyVector[i][j] + Vec[i][j-1]);
+					Vec[i].push_back(VEC[i][j] + Vec[i][j-1]);
 				}
 			}
 			else { //dla nast maszyn po zakonczeniu na poprzedniej
 				if (j == 0) {//dla pierwszego zad napewno
-					Vec[i].push_back(MyVector[i][j] + Vec[i - 1][j]);
+					Vec[i].push_back(VEC[i][j] + Vec[i - 1][j]);
 				}
 				else//dla nastepnych jesli maszyna skonczyla poprzednie
 				{
 					if (Vec[i][j-1] <= Vec[i-1][j]) {
-						Vec[i].push_back(MyVector[i][j] + Vec[i - 1][j]);
+						Vec[i].push_back(VEC[i][j] + Vec[i - 1][j]);
 					}
 					else
 					{
-						Vec[i].push_back(MyVector[i][j] + Vec[i][j-1]);
+						Vec[i].push_back(VEC[i][j] + Vec[i][j-1]);
 					}
 				}
 			}
@@ -220,7 +211,10 @@ vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, 
 		newOrder.push_back(i);
 		bestnewOrder = newOrder;
 		int Cmax = calculate_Cmax(VEC, quantityofMachines, i+1);//initial order
-
+		
+		/*cout << endl << endl;
+		for (int x = 0; x <= i; x++) cout << newOrder[x] << " ";
+		cout << Cmax << endl;*/
 
 		int Cmax2 = 0;
 		for (int k = 0; k < i; k++)
@@ -234,10 +228,10 @@ vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, 
 			for (int j = 0; j < quantityofMachines; j++) {
 				VECCopy[j]=getReorganisedVector(VEC[j], newOrderCopy);
 			}
-			Cmax2 = calculate_Cmax(VECCopy, quantityofMachines, i);
-			for (int x = 0; x <= i; x++) cout << newOrderCopy[x] << " ";
-			cout << Cmax2 << endl; 
-			if (Cmax2 < Cmax)
+			Cmax2 = calculate_Cmax(VECCopy, quantityofMachines, i+1);
+			//for (int x = 0; x <= i; x++) cout << newOrderCopy[x] << " ";
+			//cout << Cmax2 << endl; 
+			if (Cmax2 <= Cmax)
 			{
 				Cmax = Cmax2;
 				bestnewOrder = newOrderCopy;
@@ -246,8 +240,7 @@ vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, 
 
 		if (i != 0) {
 			newOrder = bestnewOrder;
-			for (int x = 0; x <= i; x++) cout << newOrder[x] << " ";
-			cout << endl << endl;
+			//for (int x = 0; x <= i; x++) cout << newOrder[x] << " ";
 			for (int j = 0; j < quantityofMachines; j++) {
 				VEC[j]=getReorganisedVector(VEC[j], newOrder);
 			}
@@ -260,7 +253,5 @@ vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, 
 	bestnewOrder.clear();
 	newOrderCopy.clear();
 
-	OrderWj = getReorganisedVector(OrderWj, newOrder);
-	for (int x = 0; x < quantityofDataLines; x++)cout << OrderWj[x] << endl;
-	return OrderWj;
+	return OrderWj = getReorganisedVector(OrderWj, newOrder);
 }
