@@ -1,0 +1,4 @@
+﻿  FSP.cpp
+D:\Studia\Sterowanie procesami dyskretnymi\Sterowanie_procesami_dyskretnymi\FSP\FSP\FSP.cpp(120,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+D:\Studia\Sterowanie procesami dyskretnymi\Sterowanie_procesami_dyskretnymi\FSP\FSP\FSP.cpp(129,20): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  FSP.vcxproj -> D:\Studia\Sterowanie procesami dyskretnymi\Sterowanie_procesami_dyskretnymi\FSP\Debug\FSP.exe
