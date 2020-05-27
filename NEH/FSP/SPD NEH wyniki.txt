@@ -1,0 +1,841 @@
+###########ta001###########
+Cmax for initialorder = 1448
+Cmax for NEH Algorithm = 1299
+
+NEH Algorithm time: 0.0585032 s
+
+
+###########ta002###########
+Cmax for initialorder = 1545
+Cmax for NEH Algorithm = 1365
+
+NEH Algorithm time: 0.0674728 s
+
+
+###########ta003###########
+Cmax for initialorder = 1597
+Cmax for NEH Algorithm = 1139
+
+NEH Algorithm time: 0.0638439 s
+
+
+###########ta004###########
+Cmax for initialorder = 1754
+Cmax for NEH Algorithm = 1329
+
+NEH Algorithm time: 0.0627984 s
+
+
+###########ta005###########
+Cmax for initialorder = 1431
+Cmax for NEH Algorithm = 1305
+
+NEH Algorithm time: 0.0696278 s
+
+
+###########ta006###########
+Cmax for initialorder = 1616
+Cmax for NEH Algorithm = 1251
+
+NEH Algorithm time: 0.0780307 s
+
+
+###########ta007###########
+Cmax for initialorder = 1528
+Cmax for NEH Algorithm = 1251
+
+NEH Algorithm time: 0.061859 s
+
+
+###########ta008###########
+Cmax for initialorder = 1428
+Cmax for NEH Algorithm = 1223
+
+NEH Algorithm time: 0.0554319 s
+
+
+###########ta009###########
+Cmax for initialorder = 1468
+Cmax for NEH Algorithm = 1284
+
+NEH Algorithm time: 0.0624822 s
+
+
+###########ta010###########
+Cmax for initialorder = 1404
+Cmax for NEH Algorithm = 1161
+
+NEH Algorithm time: 0.0634578 s
+
+
+###########ta011###########
+Cmax for initialorder = 2004
+Cmax for NEH Algorithm = 1681
+
+NEH Algorithm time: 0.134528 s
+
+
+###########ta012###########
+Cmax for initialorder = 2104
+Cmax for NEH Algorithm = 1766
+
+NEH Algorithm time: 0.145077 s
+
+
+###########ta013###########
+Cmax for initialorder = 1812
+Cmax for NEH Algorithm = 1562
+
+NEH Algorithm time: 0.153876 s
+
+
+###########ta014###########
+Cmax for initialorder = 1726
+Cmax for NEH Algorithm = 1443
+
+NEH Algorithm time: 0.117856 s
+
+
+###########ta015###########
+Cmax for initialorder = 1944
+Cmax for NEH Algorithm = 1502
+
+NEH Algorithm time: 0.114941 s
+
+
+###########ta016###########
+Cmax for initialorder = 1877
+Cmax for NEH Algorithm = 1456
+
+NEH Algorithm time: 0.108504 s
+
+
+###########ta017###########
+Cmax for initialorder = 1935
+Cmax for NEH Algorithm = 1531
+
+NEH Algorithm time: 0.11185 s
+
+
+###########ta018###########
+Cmax for initialorder = 2044
+Cmax for NEH Algorithm = 1626
+
+NEH Algorithm time: 0.108801 s
+
+
+###########ta019###########
+Cmax for initialorder = 1978
+Cmax for NEH Algorithm = 1638
+
+NEH Algorithm time: 0.11161 s
+
+
+###########ta020###########
+Cmax for initialorder = 2051
+Cmax for NEH Algorithm = 1656
+
+NEH Algorithm time: 0.110192 s
+
+
+###########ta021###########
+Cmax for initialorder = 2770
+Cmax for NEH Algorithm = 2443
+
+NEH Algorithm time: 0.221282 s
+
+
+###########ta022###########
+Cmax for initialorder = 2543
+Cmax for NEH Algorithm = 2134
+
+NEH Algorithm time: 0.217459 s
+
+
+###########ta023###########
+Cmax for initialorder = 2625
+Cmax for NEH Algorithm = 2414
+
+NEH Algorithm time: 0.220355 s
+
+
+###########ta024###########
+Cmax for initialorder = 2800
+Cmax for NEH Algorithm = 2262
+
+NEH Algorithm time: 0.221236 s
+
+
+###########ta025###########
+Cmax for initialorder = 2829
+Cmax for NEH Algorithm = 2370
+
+NEH Algorithm time: 0.220223 s
+
+
+###########ta026###########
+Cmax for initialorder = 2597
+Cmax for NEH Algorithm = 2349
+
+NEH Algorithm time: 0.219102 s
+
+
+###########ta027###########
+Cmax for initialorder = 2723
+Cmax for NEH Algorithm = 2398
+
+NEH Algorithm time: 0.219262 s
+
+
+###########ta028###########
+Cmax for initialorder = 2697
+Cmax for NEH Algorithm = 2249
+
+NEH Algorithm time: 0.220633 s
+
+
+###########ta029###########
+Cmax for initialorder = 2713
+Cmax for NEH Algorithm = 2306
+
+NEH Algorithm time: 0.218153 s
+
+
+###########ta030###########
+Cmax for initialorder = 2830
+Cmax for NEH Algorithm = 2257
+
+NEH Algorithm time: 0.217995 s
+
+
+###########ta031###########
+Cmax for initialorder = 3095
+Cmax for NEH Algorithm = 2729
+
+NEH Algorithm time: 0.504232 s
+
+
+###########ta032###########
+Cmax for initialorder = 3515
+Cmax for NEH Algorithm = 2882
+
+NEH Algorithm time: 0.502992 s
+
+
+###########ta033###########
+Cmax for initialorder = 2900
+Cmax for NEH Algorithm = 2650
+
+NEH Algorithm time: 0.498301 s
+
+
+###########ta034###########
+Cmax for initialorder = 3073
+Cmax for NEH Algorithm = 2782
+
+NEH Algorithm time: 0.503047 s
+
+
+###########ta035###########
+Cmax for initialorder = 3071
+Cmax for NEH Algorithm = 2868
+
+NEH Algorithm time: 0.501796 s
+
+
+###########ta036###########
+Cmax for initialorder = 3195
+Cmax for NEH Algorithm = 2835
+
+NEH Algorithm time: 0.500489 s
+
+
+###########ta037###########
+Cmax for initialorder = 3450
+Cmax for NEH Algorithm = 2838
+
+NEH Algorithm time: 0.501175 s
+
+
+###########ta038###########
+Cmax for initialorder = 3140
+Cmax for NEH Algorithm = 2688
+
+NEH Algorithm time: 0.499905 s
+
+
+###########ta039###########
+Cmax for initialorder = 2930
+Cmax for NEH Algorithm = 2574
+
+NEH Algorithm time: 0.501282 s
+
+
+###########ta040###########
+Cmax for initialorder = 3188
+Cmax for NEH Algorithm = 2816
+
+NEH Algorithm time: 0.511633 s
+
+
+###########ta041###########
+Cmax for initialorder = 3754
+Cmax for NEH Algorithm = 3175
+
+NEH Algorithm time: 1.00412 s
+
+
+###########ta042###########
+Cmax for initialorder = 3685
+Cmax for NEH Algorithm = 3073
+
+NEH Algorithm time: 1.00798 s
+
+
+###########ta043###########
+Cmax for initialorder = 3612
+Cmax for NEH Algorithm = 2980
+
+NEH Algorithm time: 1.0019 s
+
+
+###########ta044###########
+Cmax for initialorder = 3669
+Cmax for NEH Algorithm = 3218
+
+NEH Algorithm time: 0.998472 s
+
+
+###########ta045###########
+Cmax for initialorder = 3741
+Cmax for NEH Algorithm = 3141
+
+NEH Algorithm time: 1.00853 s
+
+
+###########ta046###########
+Cmax for initialorder = 3736
+Cmax for NEH Algorithm = 3148
+
+NEH Algorithm time: 1.01264 s
+
+
+###########ta047###########
+Cmax for initialorder = 3678
+Cmax for NEH Algorithm = 3277
+
+NEH Algorithm time: 1.02205 s
+
+
+###########ta048###########
+Cmax for initialorder = 3773
+Cmax for NEH Algorithm = 3165
+
+NEH Algorithm time: 1.00554 s
+
+
+###########ta049###########
+Cmax for initialorder = 3792
+Cmax for NEH Algorithm = 3025
+
+NEH Algorithm time: 1.00928 s
+
+
+###########ta050###########
+Cmax for initialorder = 3845
+Cmax for NEH Algorithm = 3205
+
+NEH Algorithm time: 1.01267 s
+
+
+###########ta051###########
+Cmax for initialorder = 5094
+Cmax for NEH Algorithm = 4006
+
+NEH Algorithm time: 2.00869 s
+
+
+###########ta052###########
+Cmax for initialorder = 4730
+Cmax for NEH Algorithm = 3958
+
+NEH Algorithm time: 2.01411 s
+
+
+###########ta053###########
+Cmax for initialorder = 4592
+Cmax for NEH Algorithm = 3895
+
+NEH Algorithm time: 2.01323 s
+
+
+###########ta054###########
+Cmax for initialorder = 4797
+Cmax for NEH Algorithm = 3953
+
+NEH Algorithm time: 1.99746 s
+
+
+###########ta055###########
+Cmax for initialorder = 4748
+Cmax for NEH Algorithm = 3872
+
+NEH Algorithm time: 2.0274 s
+
+
+###########ta056###########
+Cmax for initialorder = 4946
+Cmax for NEH Algorithm = 3861
+
+NEH Algorithm time: 2.01127 s
+
+
+###########ta057###########
+Cmax for initialorder = 4742
+Cmax for NEH Algorithm = 3927
+
+NEH Algorithm time: 2.00711 s
+
+
+###########ta058###########
+Cmax for initialorder = 4763
+Cmax for NEH Algorithm = 3914
+
+NEH Algorithm time: 2.00565 s
+
+
+###########ta059###########
+Cmax for initialorder = 4823
+Cmax for NEH Algorithm = 3970
+
+NEH Algorithm time: 2.0165 s
+
+
+###########ta060###########
+Cmax for initialorder = 4901
+Cmax for NEH Algorithm = 4036
+
+NEH Algorithm time: 2.00972 s
+
+
+###########ta061###########
+Cmax for initialorder = 5943
+Cmax for NEH Algorithm = 5514
+
+NEH Algorithm time: 2.95812 s
+
+
+###########ta062###########
+Cmax for initialorder = 5878
+Cmax for NEH Algorithm = 5286
+
+NEH Algorithm time: 3.03265 s
+
+
+###########ta063###########
+Cmax for initialorder = 5880
+Cmax for NEH Algorithm = 5216
+
+NEH Algorithm time: 3.6336 s
+
+
+###########ta064###########
+Cmax for initialorder = 5675
+Cmax for NEH Algorithm = 5023
+
+NEH Algorithm time: 3.00959 s
+
+
+###########ta065###########
+Cmax for initialorder = 6095
+Cmax for NEH Algorithm = 5261
+
+NEH Algorithm time: 18.5295 s
+
+
+###########ta066###########
+Cmax for initialorder = 5753
+Cmax for NEH Algorithm = 5139
+
+NEH Algorithm time: 2.99358 s
+
+
+###########ta067###########
+Cmax for initialorder = 5935
+Cmax for NEH Algorithm = 5282
+
+NEH Algorithm time: 2.95695 s
+
+
+###########ta068###########
+Cmax for initialorder = 6068
+Cmax for NEH Algorithm = 5121
+
+NEH Algorithm time: 2.9378 s
+
+
+###########ta069###########
+Cmax for initialorder = 6193
+Cmax for NEH Algorithm = 5489
+
+NEH Algorithm time: 2.93955 s
+
+
+###########ta070###########
+Cmax for initialorder = 6157
+Cmax for NEH Algorithm = 5336
+
+NEH Algorithm time: 2.9371 s
+
+
+###########ta071###########
+Cmax for initialorder = 6983
+Cmax for NEH Algorithm = 5897
+
+NEH Algorithm time: 5.89061 s
+
+
+###########ta072###########
+Cmax for initialorder = 6558
+Cmax for NEH Algorithm = 5410
+
+NEH Algorithm time: 5.86342 s
+
+
+###########ta073###########
+Cmax for initialorder = 6667
+Cmax for NEH Algorithm = 5784
+
+NEH Algorithm time: 5.87754 s
+
+
+###########ta074###########
+Cmax for initialorder = 7300
+Cmax for NEH Algorithm = 5953
+
+NEH Algorithm time: 5.87146 s
+
+
+###########ta075###########
+Cmax for initialorder = 6844
+Cmax for NEH Algorithm = 5665
+
+NEH Algorithm time: 5.80402 s
+
+
+###########ta076###########
+Cmax for initialorder = 6591
+Cmax for NEH Algorithm = 5394
+
+NEH Algorithm time: 5.84341 s
+
+
+###########ta077###########
+Cmax for initialorder = 6765
+Cmax for NEH Algorithm = 5717
+
+NEH Algorithm time: 5.80997 s
+
+
+###########ta078###########
+Cmax for initialorder = 6517
+Cmax for NEH Algorithm = 5738
+
+NEH Algorithm time: 5.87229 s
+
+
+###########ta079###########
+Cmax for initialorder = 6859
+Cmax for NEH Algorithm = 5998
+
+NEH Algorithm time: 5.87646 s
+
+
+###########ta080###########
+Cmax for initialorder = 6930
+Cmax for NEH Algorithm = 5924
+
+NEH Algorithm time: 6.14938 s
+
+
+###########ta081###########
+Cmax for initialorder = 7840
+Cmax for NEH Algorithm = 6572
+
+NEH Algorithm time: 12.0504 s
+
+
+###########ta082###########
+Cmax for initialorder = 7591
+Cmax for NEH Algorithm = 6515
+
+NEH Algorithm time: 11.9448 s
+
+
+###########ta083###########
+Cmax for initialorder = 7755
+Cmax for NEH Algorithm = 6696
+
+NEH Algorithm time: 12.2864 s
+
+
+###########ta084###########
+Cmax for initialorder = 7885
+Cmax for NEH Algorithm = 6616
+
+NEH Algorithm time: 11.93 s
+
+
+###########ta085###########
+Cmax for initialorder = 7729
+Cmax for NEH Algorithm = 6683
+
+NEH Algorithm time: 11.8814 s
+
+
+###########ta086###########
+Cmax for initialorder = 8072
+Cmax for NEH Algorithm = 6813
+
+NEH Algorithm time: 12.1861 s
+
+
+###########ta087###########
+Cmax for initialorder = 8033
+Cmax for NEH Algorithm = 6578
+
+NEH Algorithm time: 12.0499 s
+
+
+###########ta088###########
+Cmax for initialorder = 8138
+Cmax for NEH Algorithm = 6791
+
+NEH Algorithm time: 12.3106 s
+
+
+###########ta089###########
+Cmax for initialorder = 7907
+Cmax for NEH Algorithm = 6680
+
+NEH Algorithm time: 11.9932 s
+
+
+###########ta090###########
+Cmax for initialorder = 8099
+Cmax for NEH Algorithm = 6680
+
+NEH Algorithm time: 11.9073 s
+
+
+###########ta091###########
+Cmax for initialorder = 12193
+Cmax for NEH Algorithm = 10986
+
+NEH Algorithm time: 39.0621 s
+
+
+###########ta092###########
+Cmax for initialorder = 12796
+Cmax for NEH Algorithm = 10661
+
+NEH Algorithm time: 38.0771 s
+
+
+###########ta093###########
+Cmax for initialorder = 12556
+Cmax for NEH Algorithm = 11093
+
+NEH Algorithm time: 37.4894 s
+
+
+###########ta094###########
+Cmax for initialorder = 12198
+Cmax for NEH Algorithm = 11057
+
+NEH Algorithm time: 37.9438 s
+
+
+###########ta095###########
+Cmax for initialorder = 12110
+Cmax for NEH Algorithm = 10615
+
+NEH Algorithm time: 38.1278 s
+
+
+###########ta096###########
+Cmax for initialorder = 12116
+Cmax for NEH Algorithm = 10461
+
+NEH Algorithm time: 38.2493 s
+
+
+###########ta097###########
+Cmax for initialorder = 12848
+Cmax for NEH Algorithm = 10965
+
+NEH Algorithm time: 38.0515 s
+
+
+###########ta098###########
+Cmax for initialorder = 12294
+Cmax for NEH Algorithm = 10834
+
+NEH Algorithm time: 37.7676 s
+
+
+###########ta099###########
+Cmax for initialorder = 12010
+Cmax for NEH Algorithm = 10584
+
+NEH Algorithm time: 37.7746 s
+
+
+###########ta100###########
+Cmax for initialorder = 12274
+Cmax for NEH Algorithm = 10805
+
+NEH Algorithm time: 37.7744 s
+
+
+###########ta101###########
+Cmax for initialorder = 13576
+Cmax for NEH Algorithm = 11669
+
+NEH Algorithm time: 75.5873 s
+
+
+###########ta102###########
+Cmax for initialorder = 13628
+Cmax for NEH Algorithm = 11740
+
+NEH Algorithm time: 75.0963 s
+
+
+###########ta103###########
+Cmax for initialorder = 14152
+Cmax for NEH Algorithm = 11757
+
+NEH Algorithm time: 75.6403 s
+
+
+###########ta104###########
+Cmax for initialorder = 13479
+Cmax for NEH Algorithm = 11796
+
+NEH Algorithm time: 75.7266 s
+
+
+###########ta105###########
+Cmax for initialorder = 13686
+Cmax for NEH Algorithm = 11680
+
+NEH Algorithm time: 75.2493 s
+
+
+###########ta106###########
+Cmax for initialorder = 13917
+Cmax for NEH Algorithm = 11721
+
+NEH Algorithm time: 75.5999 s
+
+
+###########ta107###########
+Cmax for initialorder = 13836
+Cmax for NEH Algorithm = 11817
+
+NEH Algorithm time: 74.9313 s
+
+
+###########ta108###########
+Cmax for initialorder = 13855
+Cmax for NEH Algorithm = 11953
+
+NEH Algorithm time: 75.6597 s
+
+
+###########ta109###########
+Cmax for initialorder = 13409
+Cmax for NEH Algorithm = 11711
+
+NEH Algorithm time: 76.4801 s
+
+
+###########ta110###########
+Cmax for initialorder = 14101
+Cmax for NEH Algorithm = 11890
+
+NEH Algorithm time: 76.0521 s
+
+
+###########ta111###########
+Cmax for initialorder = 30121
+Cmax for NEH Algorithm = 26777
+
+NEH Algorithm time: 990.138 s
+
+
+###########ta112###########
+Cmax for initialorder = 31202
+Cmax for NEH Algorithm = 27229
+
+NEH Algorithm time: 992.743 s
+
+
+###########ta113###########
+Cmax for initialorder = 30447
+Cmax for NEH Algorithm = 26941
+
+NEH Algorithm time: 979.969 s
+
+
+###########ta114###########
+Cmax for initialorder = 30355
+Cmax for NEH Algorithm = 27066
+
+NEH Algorithm time: 978.413 s
+
+
+###########ta115###########
+Cmax for initialorder = 30099
+Cmax for NEH Algorithm = 26825
+
+NEH Algorithm time: 977.881 s
+
+
+###########ta116###########
+Cmax for initialorder = 30946
+Cmax for NEH Algorithm = 27058
+
+NEH Algorithm time: 975.392 s
+
+
+###########ta117###########
+Cmax for initialorder = 30792
+Cmax for NEH Algorithm = 26806
+
+NEH Algorithm time: 979.63 s
+
+
+###########ta118###########
+Cmax for initialorder = 31034
+Cmax for NEH Algorithm = 27230
+
+NEH Algorithm time: 999.195 s
+
+
+###########ta119###########
+Cmax for initialorder = 30634
+Cmax for NEH Algorithm = 26519
+
+NEH Algorithm time: 1010.12 s
+
+
+###########ta120###########
+Cmax for initialorder = 30148
+Cmax for NEH Algorithm = 26924
+
+NEH Algorithm time: 992.1 s
+
+
+

@@ -14,7 +14,7 @@ string line;
 int quantityofDataLines = 0;
 int quantityofMachines = 0;
 
-vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, int quantityofMachines);
+void NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, int quantityofMachines);
 vector<int> getReorganisedVector(const vector<int> VEC, const vector<int> NEW_ORDER);
 bool isVectorContainingOnlySmallNumbers(const vector<int> VEC, const int SMALL_NUMBER);
 vector<int> getNewOrderWithSortWj(vector<int> localWj);
@@ -24,7 +24,6 @@ int main() {
 	string line;
 	string dataName;
 	int temp, MachineIndex;
-	vector<int> newOrder;
 
 	for (int i = 1; i <= 120; i++) {
 		string filename;
@@ -61,20 +60,14 @@ int main() {
 			
 			auto start = std::chrono::steady_clock::now();
 
-			newOrder = NEHAlgorithm(MyVector, quantityofDataLines, quantityofMachines);
-			for (int i = 0; i < quantityofMachines; i++) {
-				MyVector[i] = getReorganisedVector(MyVector[i], newOrder);
-			}
+			NEHAlgorithm(MyVector, quantityofDataLines, quantityofMachines);
 
 			auto end = std::chrono::steady_clock::now();
 			chrono::duration<double> elapsed_seconds = end - start;
-			cout << endl << "NEH Algorithm time: " << elapsed_seconds.count() << " s" << endl;
-
-			cout << "Cmax for NEH Algorithm = " << calculate_Cmax(MyVector, quantityofMachines, quantityofDataLines) << endl << endl << endl;
+			cout << endl << "NEH Algorithm time: " << elapsed_seconds.count() << " s" << endl << endl << endl;
 
 			//clear vectors
 			MyVector.clear();
-			newOrder.clear();
 			myfile.close();
 		}
 		else {
@@ -177,81 +170,73 @@ int calculate_Cmax(vector<vector<int>> VEC, int quantityofMachines, int quantity
 	return Vec[quantityofMachines-1][quantityofDataLines-1];
 }
 
-vector<int> NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, int quantityofMachines) {
+void NEHAlgorithm(vector<vector<int>> Myvector, int quantityofDataLines, int quantityofMachines) {
 
 	//Wj vector
-	vector<int> Wj;
-	vector<int> OrderWj;
+	vector<int> Wj, OrderWj;
 	vector < vector < int > > VEC, VECCopy;
 	vector<int> newOrder, newOrderCopy, bestnewOrder;
 	
 	for (int l = 0; l < quantityofDataLines; l++) //calculate W for tasks
 	{
 		int w = 0;
-		for (int i = 0; i < quantityofMachines; i++) {
-			 w = w + Myvector[i][l];
-		}
+		for (int i = 0; i < quantityofMachines; i++) w = w + Myvector[i][l];
 		Wj.push_back(w);
 	}
 	OrderWj = getNewOrderWithSortWj(Wj); //sort tasks by W 
 
-	for (int j = 0; j < quantityofMachines; j++)
-	{
-		VEC.push_back(vector < int >());
-		VECCopy.push_back(vector < int >());
-	} 
+	for (int j = 0; j < quantityofMachines; j++) VEC.push_back(vector < int >());
 
 	for (int i = 0; i < quantityofDataLines; i++)
 	{
-		for (int j = 0; j < quantityofMachines; j++)
-		{
-			VEC[j].push_back(MyVector[j][OrderWj[i]]);
-			VECCopy[j].push_back(MyVector[j][OrderWj[i]]);
-		}
-		newOrder.push_back(i);
+		for (int j = 0; j < quantityofMachines; j++) VEC[j].push_back(MyVector[j][OrderWj[i]]); //add next Wj value
+		newOrder.push_back(i); //initial order
 		bestnewOrder = newOrder;
-		int Cmax = calculate_Cmax(VEC, quantityofMachines, i+1);//initial order
+		int Cmax = calculate_Cmax(VEC, quantityofMachines, i+1);// Cmax for first combination
 		
 		/*cout << endl << endl;
 		for (int x = 0; x <= i; x++) cout << newOrder[x] << " ";
 		cout << Cmax << endl;*/
 
 		int Cmax2 = 0;
-		for (int k = 0; k < i; k++)
+		for (int k = 0; k < i; k++) //check all combination
 		{
+			VECCopy = VEC;
 			newOrderCopy = newOrder;
-			for (int l = i-k; l > 0; l--) {
+			for (int l = i-k; l > 0; l--) { //generate new comb order (opearte on copy)
 				int zmienna = newOrderCopy[k+l-1];
 				newOrderCopy[k+l-1] = newOrderCopy[k+l];
 				newOrderCopy[k+l] = zmienna;
 			}
 			for (int j = 0; j < quantityofMachines; j++) {
-				VECCopy[j]=getReorganisedVector(VEC[j], newOrderCopy);
+				VECCopy[j]=getReorganisedVector(VEC[j], newOrderCopy); // reorgenised VEC to new comb and save to copy
 			}
-			Cmax2 = calculate_Cmax(VECCopy, quantityofMachines, i+1);
-			//for (int x = 0; x <= i; x++) cout << newOrderCopy[x] << " ";
-			//cout << Cmax2 << endl; 
-			if (Cmax2 <= Cmax)
+			Cmax2 = calculate_Cmax(VECCopy, quantityofMachines, i+1); //calculate Cmax for new comb
+
+			//for (int x = 0; x <= i; x++) cout << newOrderCopy[x] << " ";//
+			//cout << Cmax2 << endl;//
+
+			if (Cmax2 <= Cmax) // if Cmax value is smaller than best Cmax, change
 			{
 				Cmax = Cmax2;
 				bestnewOrder = newOrderCopy;
 			}
 		}
 
-		if (i != 0) {
-			newOrder = bestnewOrder;
-			//for (int x = 0; x <= i; x++) cout << newOrder[x] << " ";
-			for (int j = 0; j < quantityofMachines; j++) {
-				VEC[j]=getReorganisedVector(VEC[j], newOrder);
-			}
+		if (i != 0) { // do only for 2 or more tasks
+			//for (int x = 0; x <= i; x++) cout << bestnewOrder[x] << " ";//
+			for (int j = 0; j < quantityofMachines; j++) VEC[j]=getReorganisedVector(VEC[j], bestnewOrder);// reorgenised original VEC to best comb
 		}
 	}
+
+	cout << "Cmax for NEH Algorithm = " << calculate_Cmax(VEC, quantityofMachines, quantityofDataLines) << endl;
+
 	//clear vectors
 	Wj.clear();
+	OrderWj.clear();
 	VEC.clear();
 	VECCopy.clear();
+	newOrder.clear();
 	bestnewOrder.clear();
 	newOrderCopy.clear();
-
-	return OrderWj = getReorganisedVector(OrderWj, newOrder);
 }
